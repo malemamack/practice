@@ -2,41 +2,65 @@
 <html lang="en">
 
 <head>
-  <title>Webpage Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="main">
-        <div class="container">
-            <h2>Sign Up Here</h2> <br> <br>
-            <div>
-                <form action="submit_signup.php" class="signup">
-                    <label for="fname">First Name</label> <br>
-                    <input type="text" id="fname" name="firstname" placeholder="Your Name"> <br> <br>
- 
-                    <label for="lname">Last Name</label> <br>
-                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name"> <br> <br>
- 
-                    <label for="email">Email</label> <br>
-                    <input type="text" id="email" name="email" placeholder="Email Address" required> <br> <br>
- 
-                    <label for="address1">Street Address:</label> <br>
-                    <input type="text" id="address1" name="address1" placeholder="Your Address" required> <br> <br>
-                    <label for="phone">WhatsApp Number</label> <br>
-                    <input type="tel" id="phone" name="phone" placeholder="Your WhatsApp Number" required> <br> <br>
-                    <label for="phone">Phone Call Number</label> <br>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Call Number" required> <br> <br>
-                    <label for="password">Password</label> <br>
-                    <input type="password" id="password" name="password" required> <br> <br>
-                    <label for="confirm_password">Confirm Passsword</label> <br>
-                    <input type="password" id="confirm_password" name="confirm_password" required> <br> <br>
- 
- 
-                    <input type="submit" value="submit">
-                </form>
-            </div>
-            <p class="liw">Sign Up</p>
-        </div>
-    </div>
+  <main class="main-container">
+    <section class="signup-section">
+      <div class="form-container">
+        <h2>Sign Up Here</h2>
+        <form action="submit_signup.php" method="POST" class="signup-form">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your First Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your Last Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="address1">Street Address</label>
+            <input type="text" id="address1" name="address1" placeholder="Your Address" required>
+          </div>
+
+          <div class="form-group">
+            <label for="whatsapp">WhatsApp Number</label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Your WhatsApp Number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Call Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Call Number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a Password" required>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
